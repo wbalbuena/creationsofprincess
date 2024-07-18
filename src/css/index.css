@@ -1,0 +1,31 @@
+/* index.css */
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.gallery img{
+    width:250px;
+    height:auto;
+    padding:10px;
+    margin:0;
+}
+
+.blurb{
+    width:50%;
+    margin: 25px auto;
+    padding:0;
+}
+
+.creator{
+    margin-bottom:25px;
+}
+
+.creator img{
+    width: 25px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}

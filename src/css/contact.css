@@ -1,0 +1,22 @@
+/* contact.css */
+
+.contact-box img{
+    width:250px;
+    height:auto;
+    margin:0 auto;
+}
+
+.contact-box{
+    width:500px;
+    margin:0 auto;
+}
+
+.contact-box2{
+    width:500px;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+
+p{
+    font-size:20px;
+}

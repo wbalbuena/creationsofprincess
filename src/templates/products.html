@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PBCrochet</title>
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" type="image/x-icon" href="../css/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class = "logo">
+            <img class="img" src="../css/images/PB CROCHET LOGO.png">
+        </div>
+    </header>
+
+    <nav class = "toolbar">
+        <ul>
+            <li><a href="{{ url_for('index') }}">HOME</a></li>
+            <li><a href="{{ url_for('products') }}">PRODUCTS</a></li>
+            <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>D = Diameter or Circumference of the bottom of the bag.</h2>
+        <h2>H = Height of the bag.</h2>
+        <h2>W = Width of the body of the bag.</h2>
+
+        <div class="blurb"><h1>Customizations available upon request.</h1></div>
+        
+        <!-- Products -->
+        <div class="category-header"><h2>BAGS</h2></div>
+        <div class="product-list">
+            {% for product in products %}
+                {% if product.category == "Bags" %}
+                    <div class="product">
+                        <img class="img" src="{{ product.image_path }}">
+                        <div class="product-header">
+                            <h2 class="name">{{ product.product_name }}</h2>
+                            <h2 class="price">{{ product.price }}</h2>
+                        </div>
+                        <div class="color">{{ product.color }}</div>
+                        <div class="dimensions">{{ product.dimensions }}</div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="category-header"><h2>OTHER BAGS</h2></div>
+        <div class="product-list">
+            {% for product in products %}
+                {% if product.category == "Other Bags" %}
+                    <div class="product">
+                        <img class="img" src="{{ product.image_path }}">
+                        <div class="product-header">
+                            <h2 class="name">{{ product.product_name }}</h2>
+                            <h2 class="price">{{ product.price }}</h2>
+                        </div>
+                        <div class="color">{{ product.color }}</div>
+                        <div class="dimensions">{{ product.dimensions }}</div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="category-header"><h2>HATS</h2></div>
+        <div class="product-list">
+            {% for product in products %}
+                {% if product.category == "Hats" %}
+                    <div class="product">
+                        <img class="img" src="{{ product.image_path }}">
+                        <div class="product-header">
+                            <h2 class="name">{{ product.product_name }}</h2>
+                            <h2 class="price">{{ product.price }}</h2>
+                        </div>
+                        <div class="color">{{ product.color }}</div>
+                        <div class="dimensions">{{ product.dimensions }}</div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <!--
+        <div class="product-list">
+            <div class="product">
+                <img class="img" src="../css/images/products/Backpack Navy-White/Backpack-7.png">
+                <div class="product-header">
+                    <h2 class="name">Backpack</h2>
+                    <h2 class="price">$60</h2>
+                </div>
+                <div class="color">French Blue & White w/ Adjustable Straps</div>
+                <div class="dimensions"><b>D</b> = 7 3/4" <b>H</b> = 9" <b>W</b> = 10"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag Blue-White/Bucket Bag-1.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$50</h2>
+                </div>
+                <div class="color">Mint Green & White w/ Detachable Straps</div>
+                <div class="dimensions"><b>D</b> = 7 1/4" <b>H</b> = 10 1/2" <b>W</b> = 11 1/2"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag Grey/Bucket Bag-10.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$50</h2>
+                </div>
+                <div class="color">Dark & Lt Grey</div>
+                <div class="dimensions"><b>D</b> = 7 1/4" <b>H</b> = 9" <b>W</b> = 11"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag Pink/Bucket Bag-3.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$40</h2>
+                </div>
+                <div class="color">Peach</div>
+                <div class="dimensions"><b>D</b> = 8" <b>H</b> = 7" <b>W</b> = 10"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag Pink-White/Bucket Bag-2.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$50</h2>
+                </div>
+                <div class="color">Pink & White</div>
+                <div class="dimensions"><b>D</b> = 8 3/4" <b>H</b> = 9" <b>W</b> = 10 1/2"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag Tan-Brown/Bucket Bag-8.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$50</h2>
+                </div>
+                <div class="color">Tan & Brown w/ Detachable Straps</div>
+                <div class="dimensions"><b>D</b> = 8 1/2" <b>H</b> = 10 1/4" <b>W</b> = 12"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag White-Green/Bucket Bag-11.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$40</h2>
+                </div>
+                <div class="color">Forest Green & White</div>
+                <div class="dimensions"><b>D</b> = 10" <b>H</b> = 9" <b>W</b> = 11 1/2"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag White-Grey/Bucket Bag-14.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$40</h2>
+                </div>
+                <div class="color">Grey & White</div>
+                <div class="dimensions"><b>D</b> = 10" <b>H</b> = 8 1/2" <b>W</b> = 11"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag White-Purple/Bucket Bag-12.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$45</h2>
+                </div>
+                <div class="color">White & Purple w/ Adjustable and Detachable Straps</div>
+                <div class="dimensions"><b>D</b> = 7" <b>H</b> = 8 1/2" <b>W</b> = 9"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag White-Salmon/Bucket Bag-5.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$50</h2>
+                </div>
+                <div class="color">Peach & White w/ Detachable Straps</div>
+                <div class="dimensions"><b>D</b> = 8" <b>H</b> = 9 1/2" <b>W</b> = 11"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag White-Teal/Bucket Bag-13.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$45</h2>
+                </div>
+                <div class="color">White & Mint Green</div>
+                <div class="dimensions"><b>D</b> = 8" <b>H</b> = 9" <b>W</b> = 11"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag White-Teal2/Bucket Bag-15.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$40</h2>
+                </div>
+                <div class="color">White & Mint Green</div>
+                <div class="dimensions"><b>D</b> = 7 3/4" <b>H</b> = 8 1/2" <b>W</b> = 10"</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Bag White-Yellow/Bucket Bag-9.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Bag</h2>
+                    <h2 class="price">$40</h2>
+                </div>
+                <div class="color">Yellow & White w/ Detachable Straps</div>
+            </div>
+        </div>
+        
+        <div class="category-header"><h2>OTHER BAGS</h2></div>
+        <div class="product-list">
+            <div class="product">
+                <img class="img" src="../css/images/products/Kid Bag Teal-White/Kid Bag-6.png">
+                <div class="product-header">
+                    <h2 class="name">Kids Bag</h2>
+                    <h2 class="price">$10</h2>
+                </div>
+                <div class="color">Mint Green w/ White Ribbon</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Mini Bucket Bag Pink/D1E158A2-77C3-422A-BD1D-19A6F4B35194_1_105_c.jpeg">
+                <div class="product-header">
+                    <h2 class="name">Mini Bucket Bag</h2>
+                    <h2 class="price">$30</h2>
+                </div>
+                <div class="color">Coral</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Mini Bucket Bag Pink-White/Bucket Bag-16.png">
+                <div class="product-header">
+                    <h2 class="name">Small Tote Bag</h2>
+                    <h2 class="price">$35</h2>
+                </div>
+                <div class="color">Peach & Ecru</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Tote Bag Polka/Tote Bag-18.png">
+                <div class="product-header">
+                    <h2 class="name">Large Tote Bag</h2>
+                    <h2 class="price">$65</h2>
+                </div>
+                <div class="color">Ecru w/ Polka Dots</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Wristlet Grey/Wristlet-17.png">
+                <div class="product-header">
+                    <h2 class="name">Wristlet</h2>
+                    <h2 class="price">$35</h2>
+                </div>
+                <div class="color">Grey w/ Key Charm</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Wristlet Lime/Wristlet-4.png">
+                <div class="product-header">
+                    <h2 class="name">Wristlet</h2>
+                    <h2 class="price">$30</h2>
+                </div>
+                <div class="color">Lime Green</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Wristlet Watermelon/04D8C30D-8500-4C98-B485-E0000AB9C585_1_105_c.jpeg">
+                <div class="product-header">
+                    <h2 class="name">Wristlet</h2>
+                    <h2 class="price">$40</h2>
+                </div>
+                <div class="color">Watermelon w/ Key Charm</div>
+            </div>
+        </div>
+        
+        <div class="category-header"><h2>HATS</h2></div>
+        <div class="product-list">
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Hat Brown-Tan/Screenshot 2023-10-04 at 11.24.42 AM.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Hat</h2>
+                    <h2 class="price">$40</h2>
+                </div>
+                <div class="color">Brown w/ Tan Designs</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Hat Grey/Screenshot 2023-10-04 at 11.23.42 AM.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Hat</h2>
+                    <h2 class="price">$40</h2>
+                </div>
+                <div class="color">Grey w/ Designs</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Hat Grey-Pink/Screenshot 2023-10-04 at 11.16.21 AM.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Hat</h2>
+                    <h2 class="price">$50</h2>
+                </div>
+                <div class="color">Grey w/ Pink Flowers</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Hat Grey-White/Screenshot 2023-10-04 at 11.15.38 AM.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Hat</h2>
+                    <h2 class="price">$30</h2>
+                </div>
+                <div class="color">Grey & White</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Hat Navy/Screenshot 2023-10-04 at 11.18.58 AM.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Hat</h2>
+                    <h2 class="price">$30</h2>
+                </div>
+                <div class="color">Navy Blue</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Hat Purple-White/Screenshot 2023-10-04 at 11.22.34 AM.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Hat</h2>
+                    <h2 class="price">$35</h2>
+                </div>
+                <div class="color">Purple & White</div>
+            </div>
+            <div class="product">
+                <img class="img" src="../css/images/products/Bucket Hat Red-White/Screenshot 2023-10-04 at 11.19.51 AM.png">
+                <div class="product-header">
+                    <h2 class="name">Bucket Hat</h2>
+                    <h2 class="price">$40</h2>
+                </div>
+                <div class="color">Red & White Flowers</div>
+            </div>
+        </div>
+        -->
+
+        <!-- Product Pop-ups
+        <div id="bpnw" class="popup">
+            <div id="bpnw-content" class="popup-content">
+                <span class="close" onclick="closePopup('bpnw')">&times;</span>
+                <img class="img" src="css/images/placeholder1.jpg">
+                <img class="img" src="css/images/placeholder1.jpg">
+                <img class="img" src="css/images/placeholder1.jpg">
+                <h2>Item</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+        -->
+
+        <div class="blurb">
+            <h1>Items are always being added! Check back soon!</h1>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 pbcrochet
+    </footer>
+</body>
+</html>
+
+<!--
+<script>
+    function openPopup(popupID) {
+        var popup = document.getElementById(popupID);
+        popup.style.display = 'block';
+    }
+
+    function closePopup(popupID) {
+        var popup = document.getElementById(popupID);
+        popup.style.display = 'none';
+    }
+</script>
+-->
