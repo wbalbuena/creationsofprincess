@@ -25,10 +25,9 @@ Working on this project has been a great refresher for concepts that I learned r
 * Dynamically adjusting HTML pages for product page.
   * **Flask**, **Python**, **SQL** integration
 * Attractive and efficient design utilizing lessons learned from human-computer interface course.
-* Product information available through pop-ups when clicked.  (Feature temporarily removed.)
+* Hosted on a web server.
 
 ## Planned Features
-* Host on a Flask-friendly webserver.
 * Registered domain name: creationsofprincess.com
 * Interactive elements on the pages such as a slideshow on the homepage.
 * Filter on product page to filter by category of item.
