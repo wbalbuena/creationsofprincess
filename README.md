@@ -5,23 +5,25 @@ Creations of Princess started as PBCrochet, a website portfolio to showcase croc
 
 Working on this project has been a great refresher for concepts that I learned regarding human-computer interface design and has given me more experience regarding front-end development, APIs, and database work with SQL.
 
-## HOW TO RUN:
-1. input in cmd line or powershell:
-- python src/database.py
-- python src/app.py
-2. in web browser open: http://127.0.0.1:5000
+## HOW TO RUN LOCALLY:
+1. Build the local database:
+  - python src/local_database.py
+2. Run the web application locally:
+  - python src/app.py
+3. In a web browser open: http://127.0.0.1:5000
 
 ## Tools Used
 * HTML, CSS
 * Flask
-* SQLite
+* SQLite / MySQL
 * Git Bash
+* DBeaver
+* PythonAnywhere
 
 ## Completed Features
 * Flexible product list design that adjusts as more products are added or removed.
 * Dynamically adjusting HTML pages for product page.
   * **Flask**, **Python**, **SQL** integration
-  * Database for items.
 * Attractive and efficient design utilizing lessons learned from human-computer interface course.
 * Product information available through pop-ups when clicked.  (Feature temporarily removed.)
 
