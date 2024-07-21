@@ -1,5 +1,13 @@
 /* products.css */
 
+.key-container{
+    width:300px;
+    margin: 0 auto;
+    border-style: solid;
+    border-color:pink;
+    flex-wrap: wrap;
+}
+
 .product-list{
     display: flex;
     flex-wrap: wrap;

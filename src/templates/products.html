@@ -22,11 +22,12 @@
     </nav>
     
     <main>
-        <h2>D = Diameter or Circumference of the bottom of the bag.</h2>
-        <h2>H = Height of the bag.</h2>
-        <h2>W = Width of the body of the bag.</h2>
-
-        <div class="blurb"><h1>Customizations available upon request.</h1></div>
+        <div class="key-container">
+            <div class="category-header"><h2>KEY</h2></div>
+            <p>D = Diameter or Circumference of the bottom of the bag.</p>
+            <p>H = Height of the bag.</p>
+            <p>W = Width of the body of the bag.</p>
+        </div>
         
         <!-- Products -->
         <div class="category-header"><h2>BAGS</h2></div>
@@ -36,8 +37,8 @@
                     <div class="product">
                         <img class="img" src="{{ product.image_path }}">
                         <div class="product-header">
-                            <h2 class="name">{{ product.product_name }}</h2>
-                            <h2 class="price">{{ product.price }}</h2>
+                            <h3 class="name">{{ product.product_name }}</h2>
+                            <h3 class="price">{{ product.price }}</h2>
                         </div>
                         <div class="color">{{ product.color }}</div>
                         <div class="dimensions">{{ product.dimensions }}</div>
@@ -52,8 +53,8 @@
                     <div class="product">
                         <img class="img" src="{{ product.image_path }}">
                         <div class="product-header">
-                            <h2 class="name">{{ product.product_name }}</h2>
-                            <h2 class="price">{{ product.price }}</h2>
+                            <h3 class="name">{{ product.product_name }}</h2>
+                            <h3 class="price">{{ product.price }}</h2>
                         </div>
                         <div class="color">{{ product.color }}</div>
                         <div class="dimensions">{{ product.dimensions }}</div>
@@ -68,8 +69,8 @@
                     <div class="product">
                         <img class="img" src="{{ product.image_path }}">
                         <div class="product-header">
-                            <h2 class="name">{{ product.product_name }}</h2>
-                            <h2 class="price">{{ product.price }}</h2>
+                            <h3 class="name">{{ product.product_name }}</h2>
+                            <h3 class="price">{{ product.price }}</h2>
                         </div>
                         <div class="color">{{ product.color }}</div>
                         <div class="dimensions">{{ product.dimensions }}</div>
