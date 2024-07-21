@@ -5,6 +5,9 @@ from flask_sqlalchemy import SQLAlchemy
 # "mysql+mysqldb://{username}:{password}@{hostname}/{databasename}"
 SQLALCHEMY_DATABASE_URI = "mysql+mysqldb://wbalbuena:NTC7cur6jvg*gzd-rxg@wbalbuena.mysql.pythonanywhere-services.com/wbalbuena$default"
 
+# For running locally:
+SQLALCHEMY_DATABASE_URI = 'sqlite:///products.db'
+
 app = Flask(__name__, template_folder='templates', static_folder='css')
 
 # pool_recycle - how long a database connection can be left unused before discarded
