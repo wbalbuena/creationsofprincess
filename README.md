@@ -13,6 +13,7 @@ Working on this project has been a great refresher for concepts that I learned r
 3. In a web browser open: http://127.0.0.1:5000
 
 ## Tools Used
+* Python 3.10
 * HTML, CSS
 * Flask
 * SQLite / MySQL
