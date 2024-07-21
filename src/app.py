@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 SQLALCHEMY_DATABASE_URI = "mysql+mysqldb://wbalbuena:NTC7cur6jvg*gzd-rxg@wbalbuena.mysql.pythonanywhere-services.com/wbalbuena$default"
 
 # For running locally:
-SQLALCHEMY_DATABASE_URI = 'sqlite:///products.db'
+# SQLALCHEMY_DATABASE_URI = 'sqlite:///products.db'
 
 app = Flask(__name__, template_folder='templates', static_folder='css')
 
