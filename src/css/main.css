@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #5bf3a0;
+    background-color: white;
     color: #fff;
     padding: 10px;
     margin: 0 auto;
@@ -18,7 +18,7 @@ header {
 }
 
 .logo img{
-    width:250px;
+    width:150px;
     height:auto;
 }
 
@@ -37,7 +37,7 @@ main {
 }
 
 .toolbar{
-    background-color:#0191f1;
+    background-color:#f5c9c6;
     display:flex;
     justify-content: center;
     margin: 0 auto;
