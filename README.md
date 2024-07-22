@@ -1,6 +1,6 @@
-# Creations by Princess
+# Creations of Princess
 
-## https://creationsbyprincess.com
+## https://creationsofprincess.com
 
 ![preview1](https://github.com/user-attachments/assets/4c870391-4070-45b8-8b5d-451ea88464f2)
 
