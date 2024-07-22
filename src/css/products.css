@@ -5,7 +5,20 @@
     margin: 0 auto;
     border-style: solid;
     border-color:pink;
+    border-width: 5px;
     flex-wrap: wrap;
+    padding-left:5px;
+}
+
+.key-container h4{
+    margin: 0;
+    margin-top: 5px;
+}
+
+.key-container p{
+    font-size:small;
+    text-align: left;
+    margin: 10px;
 }
 
 .product-list{
