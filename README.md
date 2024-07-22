@@ -1,9 +1,11 @@
-# CREATIONS OF PRINCESS
+# Creations by Princess
+
+## https://creationsbyprincess.com
 
 ## Description
 Creations of Princess started as PBCrochet, a website portfolio to showcase crocheted goods.  PBCrochet was first deployed as a simple website utilizing HTML and CSS.  Flask and SQLite integration were worked on to manage the items that would be showcased more easily unfortunately it would not be completed before progress on the website halted.  Creations of Princess is the continuation of the work done on PBCrochet.
 
-Working on this project has been a great refresher for concepts that I learned regarding human-computer interface design and has given me more experience regarding front-end development, APIs, and database work with SQL.
+Working on this project has been a great refresher for concepts that I learned regarding human-computer interface design and has given me more experience regarding front-end development, APIs, website hosting and maintenance, and database work with SQL.
 
 ## HOW TO RUN LOCALLY:
 1. Build the local database:
