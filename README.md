@@ -40,4 +40,5 @@ Working on this project has been a great refresher for concepts that I learned r
   * Sidebar with clickable categories.
   * Drop-down toolbar with categories.
 * Sort items on product page.
+* Dynamic HTML for individual product details.
 * Add caching behavior to ensure visitors see up to date version of the website.
