@@ -16,7 +16,7 @@ class Product(db.Model):
     color = db.Column(db.String(100), nullable=False)
     dimensions = db.Column(db.String(100), nullable=True)
     category = db.Column(db.String(100), nullable=False)
-    image_path = db.Column(db.String(100), nullable=False)
+    image_path = db.Column(db.String(100), nullable=True)
 
 with app.app_context():
     db.drop_all()
@@ -36,7 +36,7 @@ product_list = [
     Product(product_name='Bucket Bag', price=50, color='Peach & White w/ Detachable Straps', dimensions='D = 8" H = 9 1/2" W = 11"', category='Bags', image_path='../css/images/products/Bucket Bag White-Salmon/Bucket Bag-5.png'),
     Product(product_name='Bucket Bag', price=45, color='White & Mint Green', dimensions='D = 8" H = 9" W = 11"', category='Bags', image_path='../css/images/products/Bucket Bag White-Teal/Bucket Bag-13.png'),
     Product(product_name='Bucket Bag', price=40, color='White & Mint Green', dimensions='D = 7 3/4" H = 8 1/2" W = 10"', category='Bags', image_path='../css/images/products/Bucket Bag White-Teal2/Bucket Bag-15.png'),
-    Product(product_name='Bucket Bag', price=40, color='Yellow & White w/ Detachable Straps', category='Bags', image_path='../css/images/products/Bucket Bag White-Yellow/Bucket Bag-9.png'),
+    Product(product_name='Bucket Bag', price=40, color='Yellow & White w/ Detachable Straps', category='Bags'),
     Product(product_name='Kids Bag', price=10, color='Mint Green w/ White Ribbon', category='Other Bags', image_path='../css/images/products/Kid Bag Teal-White/Kid Bag-6.png'),
     Product(product_name='Mini Bucket Bag', price=30, color='Coral', category='Other Bags', image_path='../css/images/products/Mini Bucket Bag Pink/D1E158A2-77C3-422A-BD1D-19A6F4B35194_1_105_c.jpeg'),
     Product(product_name='Small Tote Bag', price=35, color='Peach & Ecru', category='Other Bags', image_path='../css/images/products/Mini Bucket Bag Pink-White/Bucket Bag-16.png'),
