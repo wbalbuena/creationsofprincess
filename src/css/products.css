@@ -24,6 +24,8 @@
 .product-list{
     display: flex;
     flex-wrap: wrap;
+    max-width:1250px;
+    margin:0 auto;
 }
 
 .category-header{

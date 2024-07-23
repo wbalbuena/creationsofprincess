@@ -2,14 +2,14 @@
 
 body {
     font-family: Georgia, sans-serif;
-    margin: 0 auto;
+    background-color:#f5c9c6;
+    margin:0;
 }
 
 header {
     background-color: white;
     color: #fff;
     padding: 10px;
-    margin: 0 auto;
 }
 
 .logo{
@@ -23,16 +23,19 @@ header {
 }
 
 footer{
+    position: relative;
+    bottom:0;
+    padding-top:15px;
+    padding-bottom:15px;
     color:black;
     text-align:center;
     font-size:12px;
+    background-color:#f5c9c6;
 }
 
 main {
     text-align: center;
-    max-width:1250px;
     padding:10px;
-    margin: 0 auto;
     background-color:white;
 }
 
