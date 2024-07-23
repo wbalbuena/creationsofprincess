@@ -36,7 +36,7 @@
             {% for product in products %}
                 {% if product.category == "Bags" %}
                     <div class="product">
-                        <img class="img" src="{{ product.image_path }}">
+                        <img class="img" src="{{ product.image_path if product.image_path else '..\css\images\placeholder1.jpg' }}">
                         <div class="product-header">
                             <h3 class="name">{{ product.product_name }}</h2>
                             <h3 class="price">${{ product.price }}</h2>
@@ -52,7 +52,7 @@
             {% for product in products %}
                 {% if product.category == "Other Bags" %}
                     <div class="product">
-                        <img class="img" src="{{ product.image_path }}">
+                        <img class="img" src="{{ product.image_path if product.image_path else '..\css\images\placeholder1.jpg' }}">
                         <div class="product-header">
                             <h3 class="name">{{ product.product_name }}</h2>
                             <h3 class="price">${{ product.price }}</h2>
@@ -68,7 +68,7 @@
             {% for product in products %}
                 {% if product.category == "Hats" %}
                     <div class="product">
-                        <img class="img" src="{{ product.image_path }}">
+                        <img class="img" src="{{ product.image_path if product.image_path else '..\css\images\placeholder1.jpg' }}">
                         <div class="product-header">
                             <h3 class="name">{{ product.product_name }}</h2>
                             <h3 class="price">${{ product.price }}</h2>
